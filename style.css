@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #d2f1fe;
+}
+.hallo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+h1{
+    font-size: 250%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+article{
+    width: 60vw;
+    margin: 0 auto;
+    padding: 40px
+}
+
+figure{
+    margin-bottom: 40px;
+}
+
+img{
+    width:100% ;
+    border-radius: 5px;
+}
+
+figcaption{
+    font-size: 80%;
+    font-style: italic;
+}
+
+p{
+    margin-top: 100px;
+}
+#container{
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+}
+
+#myinteraction{
+    padding: 10px;
+}
+
+
+#mapimage{
+    max-width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+
+nav button {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#knopNoord, #knopZuid {
+    display: block;
+    width: 300px;
+
+}
+
+#knopWest, #knopOost {
+    display: inline-block;
+    width: 150px;
+
+}
+
